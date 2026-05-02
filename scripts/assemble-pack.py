@@ -421,6 +421,7 @@ _SCAN_SKIP_PREFIXES: tuple[str, ...] = (
     "scripts/assemble-pack.py",
     ".kiro/specs/",
     "tests/fixtures/",
+    "tests/test_scan.py",
 )
 
 
