@@ -1,0 +1,15 @@
+# Pre-commit configuration for ai-dev-standards.
+#
+# Single local hook that runs `assemble-pack.py check-all` (validate +
+# sync-steering --check + scan) before every commit. Uses the `system`
+# language so contributors don't need pre-commit to build a managed
+# environment — whatever Python is on PATH with pyyaml installed will do.
+repos:
+  - repo: local
+    hooks:
+      - id: assemble-pack-check-all
+        name: assemble-pack check-all
+        entry: python scripts/assemble-pack.py check-all
+        language: system
+        pass_filenames: false
+        always_run: true
