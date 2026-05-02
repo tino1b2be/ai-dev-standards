@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reusable-ai-dev-standards-library"
+version = "0.1.0"
+description = "Content-only library of reusable AI-assisted development standards with a single pack assembly script."
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools]
+# This project is a content-only library with a single CLI script
+# (scripts/assemble-pack.py). The top-level directories (core/, specs/,
+# packs/, steering/, docs/, scripts/) are content, not Python packages.
+# Explicitly declare no modules so setuptools does not try to auto-discover
+# them and fail on the flat layout.
+py-modules = []
