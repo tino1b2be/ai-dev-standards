@@ -1,0 +1,12 @@
+name: frontend-web-typescript
+version: 0.1.0
+description: Standards for frontend web projects in TypeScript.
+foundational:
+  - tools/kiro/foundational/product.md
+  - tools/kiro/foundational/tech.md
+  - tools/kiro/foundational/structure.md
+files:
+  - steering/security.md
+  - steering/api-standards.md
+  - core/application/frontend-web.md
+  - core/languages/typescript.md

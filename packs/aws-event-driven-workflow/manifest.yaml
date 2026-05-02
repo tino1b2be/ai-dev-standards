@@ -1,0 +1,13 @@
+name: aws-event-driven-workflow
+version: 0.1.0
+description: Standards for AWS event-driven microservices.
+foundational:
+  - tools/kiro/foundational/product.md
+  - tools/kiro/foundational/tech.md
+  - tools/kiro/foundational/structure.md
+files:
+  - steering/security.md
+  - steering/cicd.md
+  - core/platforms/aws.md
+  - core/application/microservices.md
+  - core/languages/python.md

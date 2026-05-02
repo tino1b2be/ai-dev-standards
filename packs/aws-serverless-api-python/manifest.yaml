@@ -1,0 +1,13 @@
+name: aws-serverless-api-python
+version: 0.1.0
+description: Standards for AWS serverless HTTP APIs in Python.
+foundational:
+  - tools/kiro/foundational/product.md
+  - tools/kiro/foundational/tech.md
+  - tools/kiro/foundational/structure.md
+files:
+  - steering/security.md
+  - steering/api-standards.md
+  - core/platforms/aws.md
+  - core/application/aws-serverless.md
+  - core/languages/python.md
